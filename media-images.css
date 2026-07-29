@@ -1,0 +1,21 @@
+.media-photo {
+  object-fit: cover;
+}
+
+.media-photo--robot {
+  object-position: center 30%;
+}
+
+.media-photo--radio {
+  object-position: center 46%;
+}
+
+@media (max-width: 560px) {
+  .media-photo--robot {
+    object-position: center 25%;
+  }
+
+  .media-photo--radio {
+    object-position: center 42%;
+  }
+}
