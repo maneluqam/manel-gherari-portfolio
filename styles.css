@@ -18,10 +18,11 @@ nav a:hover::after,nav a.active::after{right:0}
 .signature-question{--marker-bg:linear-gradient(100deg,#efaa94 0%,#f5c8ae 62%,#efd8bc 100%);--marker-tip:#efd8bc}
 .signature-teaching{--marker-bg:linear-gradient(100deg,#9fc4dd 0%,#c9dce8 62%,#eadbc8 100%);--marker-tip:#eadbc8}
 .signature-journey{--marker-bg:linear-gradient(100deg,#b69cb8 0%,#d4bcd0 62%,#ecd6c9 100%);--marker-tip:#ecd6c9}
-.conversation-kicker{position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:13px;padding:14px 28px 14px 22px;border:0;border-radius:999px 13px 13px 999px;background:linear-gradient(105deg,var(--gold),#e6c474);color:#2f2930;font-size:12px;box-shadow:0 12px 30px rgba(0,0,0,.16);transition:transform .3s ease}
-.conversation-kicker:hover{transform:translateX(6px)}
-.conversation-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--plum);box-shadow:0 0 0 0 rgba(107,73,109,.45);animation:contactPulse 2.4s ease-out infinite}
-.conversation-kicker::after{content:"";position:absolute;z-index:-1;right:-12px;top:50%;width:23px;height:30px;background:#e6c474;clip-path:polygon(0 0,100% 20%,100% 80%,0 100%);transform:translateY(-50%)}
+.conversation-kicker{position:relative;display:inline-flex;align-items:center;gap:13px;width:max-content;padding:0 0 10px;border:0;border-radius:0;background:none;color:#efc974;font-size:10px;box-shadow:none;transition:color .3s ease,transform .3s ease}
+.conversation-kicker:hover{color:#fff;transform:translateX(6px)}
+.conversation-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(212,169,79,.45);animation:contactPulse 2.4s ease-out infinite}
+.conversation-kicker::after{content:"";position:absolute;left:21px;right:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--coral));transform:scaleX(.42);transform-origin:left center;transition:transform .35s ease}
+.conversation-kicker:hover::after{transform:scaleX(1)}
 .section{position:relative}
 .stack-section::before,.media::before,.journey::before{content:"";position:absolute;z-index:0;width:220px;height:220px;border-radius:50%;filter:blur(2px);opacity:.12;pointer-events:none;animation:ambientFloat 9s ease-in-out infinite alternate}
 .stack-section::before{right:-90px;top:80px;background:var(--coral)}
