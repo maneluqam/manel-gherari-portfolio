@@ -1,0 +1,23 @@
+.research-page{background:var(--cream)}
+.research-page header{grid-template-columns:1fr auto}
+.research-page header .button{justify-self:end}
+.research-hero{min-height:72vh;padding:150px 8vw 80px;display:grid;grid-template-columns:1.25fr .55fr;gap:8vw;align-items:end;color:#fff;background:var(--forest)}
+.research-hero h1{max-width:900px;margin:0;font:400 clamp(55px,7.2vw,108px)/.94 Georgia,serif;letter-spacing:-.055em}
+.research-hero .summary{margin:0;color:#c8d8d2;font-size:18px;line-height:1.7}
+.research-hero.coral-hero em{color:#f0a28f}.research-hero.blue-hero em{color:#9fc4dd}.research-hero.gold-hero em{color:#efc974}.research-hero.plum-hero em{color:#d1b4d2}
+.research-body{padding:100px 8vw 130px}
+.research-intro{display:grid;grid-template-columns:.48fr 1.2fr;gap:8vw;margin-bottom:90px}
+.research-intro h2,.research-block h2{margin:0;font:400 clamp(34px,4vw,58px)/1 Georgia,serif;letter-spacing:-.04em}
+.research-intro p{margin:0;color:var(--muted);font:400 clamp(21px,2.35vw,34px)/1.45 Georgia,serif}
+.research-blocks{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.research-block{min-height:310px;padding:38px;border:1px solid var(--line);border-radius:18px;background:#fbf7f0}
+.research-block small{color:var(--green);font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.research-block h2{margin:34px 0 20px;font-size:34px}
+.research-block p,.research-block li{color:var(--muted);line-height:1.7}
+.research-block ul{margin:0;padding-left:20px}
+.research-results{margin-top:18px;padding:58px;border-radius:18px;color:#fff;background:var(--plum)}
+.research-results h2{margin:0 0 24px;font:400 clamp(36px,4vw,58px)/1 Georgia,serif;letter-spacing:-.04em}
+.research-results p{max-width:900px;margin:0;color:#ded1df;font-size:18px;line-height:1.75}
+.research-next{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-top:70px;padding-top:28px;border-top:1px solid var(--line)}
+.research-next a{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:900px){.research-hero,.research-intro,.research-blocks{grid-template-columns:1fr}.research-hero{min-height:auto;padding:130px 24px 70px}.research-body{padding:75px 24px 95px}.research-intro{gap:28px;margin-bottom:60px}.research-block{min-height:auto}.research-results{padding:38px 28px}.research-next{align-items:flex-start;flex-direction:column}}
